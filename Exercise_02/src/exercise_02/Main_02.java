@@ -53,10 +53,10 @@ public class Main_02 {
             System.out.println("Cual es la raza que desea eliminar?");
             String respRaza = entrada.next();
 
-            Iterator<String> it = razas.iterator();
-            while (it.hasNext()) {
-                if(it.next().equals(respRaza)){
-                    it.remove();
+            Iterator<String> posicion = razas.iterator();
+            while (posicion.hasNext()) {
+                if(posicion.next().equals(respRaza)){
+                    posicion.remove();
                     existeRaza = true;
                 }
             }
