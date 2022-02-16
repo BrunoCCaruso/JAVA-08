@@ -32,7 +32,7 @@ public class PerroService {
                     break;
                 default:
                     System.out.println("No ingresó una opción válida");
-                    
+
             }
 
         } while (!(resp.equalsIgnoreCase("No")));
@@ -41,10 +41,20 @@ public class PerroService {
 
     public void visualizarLista() {
         System.out.println("LISTA DE PERROS");
-        for(Perro perro : listaPerro) {
+        for (Perro perro : listaPerro) {
             System.out.println(perro.getRaza());
         }
 
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
