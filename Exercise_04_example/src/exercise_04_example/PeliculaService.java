@@ -22,48 +22,44 @@ public class PeliculaService {
     }
 
     public void llamadorDeMetodos(String resp) {
-        boolean band = false;
-        do {
-            switch (resp.toLowerCase()) {
-                case "a":
-                    crearPelicula();
-                    menu();
-                    break;
-                case "b":
-                    verListaPelis();
-                    menu();
-                    break;
-                case "c":
-                    verListaMayorHora();
-                    menu();
-                    break;
-                case "d":
-                    verListaMayorAMenorDur();
-                    menu();
-                    break;
-                case "e":
-                    verListaMenorAMayorDur();
-                    menu();
-                    break;
-                case "f":
-                    verListaOrdenAlfabTitulo();
-                    menu();
-                    break;
-                case "g":
-                    verListaOrdenAlfabDirector();
-                    menu();
-                    break;
-                case "h":
-                    System.out.println("Salió exitosamente.");
-                    band = true;
-                    break;
-                default:
-                    System.out.println("Ingrese una opción válida");
-                    menu();
 
-            }
-
-        } while (!band);
+        switch (resp.toLowerCase()) {
+            case "a":
+                crearPelicula();
+                menu();
+                break;
+            case "b":
+                verListaPelis();
+                menu();
+                break;
+            case "c":
+                verListaMayorHora();
+                menu();
+                break;
+            case "d":
+                verListaMayorAMenorDur();
+                menu();
+                break;
+            case "e":
+                verListaMenorAMayorDur();
+                menu();
+                break;
+            case "f":
+                verListaOrdenAlfabTitulo();
+                menu();
+                break;
+            case "g":
+                verListaOrdenAlfabDirector();
+                menu();
+                break;
+            case "h":
+                System.out.println("Salió exitosamente.");
+                break;
+            default:
+                System.out.println("Ingrese una opción válida");
+                menu();
+                break;
+        }
 
     }
 
